@@ -9,22 +9,30 @@
 </head>
 <body>
   <div class="form-container">
-    <form action="submit">
+    <form id="form" action="submit">
       <div class="input-box">
-        <label for="Name">Full Name:</label>
-        <input type="text" placeholder="Enter full name">
+        <label for="name">Full Name:</label>
+        <input id="name" type="text" placeholder="Enter full name" autocomplete="on">
+        <span id="error-name">Enter full name</span>
       </div>
       <div class="input-box">
-        <label for="Email">Email:</label>
-        <input type="email" placeholder="@gmail.com">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="@gmail.com" autocomplete="on">
+        <span id="error-email">Invalid Email</span>
       </div>
       <div class="input-box">
-        <label for="Number">Phone:</label>
-        <input type="tel" placeholder="Phone">
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="password" autocomplete="on">
+        <span id="error-password">Password must be above 5 characters</span>
+      </div>
+      <div class="input-box">
+        <label for="number">Phone:</label>
+        <input id="number" type="tel" placeholder="Phone" autocomplete="on" required>
+        <span id="error-phone">Invalid Phone Number</span>
       </div>
       <div class="message-box">
         <label for="message">Type a massage:</label><br>
-        <textarea rows="5" name="Note" id="Note"></textarea>
+        <textarea rows="5" name="Note" id="message"></textarea>
       </div>
       <button class="submit" type="submit">Submit</button>
     </form>
