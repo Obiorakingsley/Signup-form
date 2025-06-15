@@ -10,6 +10,7 @@ body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.2rem;
   display: grid;
+  height: 100vh;
 }
 
 .form-container{
@@ -27,6 +28,7 @@ form{
   width: 100%;
   background-color: whitesmoke;
   color: #333;
+  height: 100%;
   
 }
 
@@ -58,6 +60,27 @@ form{
   border-bottom: 1px solid #333;
   font-size: inherit;
   width: 100%;
+}
+
+#password{
+  padding-right: 2.5rem;
+}
+
+#hide-password{
+  width: 25;
+  height: 25;
+  position: absolute;
+  right: 0;
+
+}
+
+.validate-password{
+  font-size: .7rem;
+  color: red;
+}
+
+#uppercase, #lowercase{
+  display: none;
 }
 
 label{

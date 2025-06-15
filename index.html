@@ -22,10 +22,20 @@
         <input id="email" type="email" placeholder="@gmail.com" autocomplete="on">
         <span id="error-email">Invalid Email</span>
       </div>
-      <div class="input-box">
-        <label for="password">Password:</label>
-        <input id="password" type="password" placeholder="password" autocomplete="on">
-        <span id="error-password">Password must be above 5 characters</span>
+      <div class="password">
+        <div class="input-box">
+          <label for="password">Password:</label>
+          <input id="password" type="password" placeholder="password" autocomplete="on">
+          <span id="error-password">Password must be above 5 characters</span>
+          <img id="hide-password" src="images/hide.png" alt="hide password icon" width="25" height="25">
+          </div>
+        <div class="validate-password">
+          <p id="uppercase"></p>
+          <p id="lowercase"></p>
+          <p id="digit"></p>
+          <p id="symbol"></p>
+          <p id="minimum"></p>
+        </div>
       </div>
       <div class="input-box">
         <label for="number">Phone:</label>
