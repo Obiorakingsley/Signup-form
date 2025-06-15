@@ -10,6 +10,7 @@ const inputPassword = document.getElementById('password');
 const passwordError = document.getElementById('error-password');
 
 const inputPhone = document.getElementById('phone');
+const phoneError = document.getElementById('error-phone')
   
 
 inputName.addEventListener('input', () => {
@@ -23,6 +24,22 @@ inputPassword.addEventListener('input', () => {
   validateForm()
 })
 
+inputPhone.addEventListener('input', () => {
+  validateForm()
+})
+
+const hidePassword = document.getElementById('hide-password');
+
+hidePassword.addEventListener('click', () => {
+  if(inputPassword.type === 'password'){
+    hidePassword.src = 'images/view.png'
+    inputPassword.type = 'text';
+    setTimeout(() => {
+      inputPassword.type = 'password'
+      hidePassword.src = 'images/hide.png'
+    }, 2000);
+  }
+})
 
 
 
@@ -148,6 +165,21 @@ const digitRegex = /(?=.*\d)/
     minimumPassword.innerHTML = 'At least 8 characters'
     minimumPassword.style.color = 'red'
     minimumPassword.style.display = 'block'
+  }
+
+  //Phone no Validation
+
+  const phone = inputPhone.value
+  const phoneRegex = /^[0-9]{10}$/;
+
+  if(phoneRegex.test(phone)){
+    phoneError.innerHTML = `<i class="fa-solid fa-circle-check"></i> Enter phone number`
+    phoneError.style.color = 'seagreen'
+    phoneError.style.display = 'block'
+  }else{
+    phoneError.innerHTML = 'Enter phone number'
+    phoneError.style.color = 'red'
+    phoneError.style.display = 'block'
   }
 
   
