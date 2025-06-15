@@ -177,7 +177,7 @@ const digitRegex = /(?=.*\d)/
     phoneError.style.color = 'seagreen'
     phoneError.style.display = 'block'
   }else{
-    phoneError.innerHTML = 'Enter phone number'
+    phoneError.innerHTML = 'Phone should be 10 digits'
     phoneError.style.color = 'red'
     phoneError.style.display = 'block'
   }

@@ -32,11 +32,13 @@ form{
   
 }
 
+h1{
+  text-align: center;
+}
+
 .input-box{
   display: grid;
   align-items: center;
-  justify-content: space-between;
-  grid-template-columns: 20% 73%;
   gap: 1.5rem;
   position: relative;
   margin: 1rem 0;
@@ -54,23 +56,25 @@ form{
 .input-box input{
   border: none;
   outline: none;
-  padding: .25rem;
+  padding: .5rem .8rem;
   margin: 0 auto;
   background-color: transparent;
   border-bottom: 1px solid #333;
   font-size: inherit;
   width: 100%;
+  border-radius: 35px;
+  box-shadow: 1px 0 3px #162917 , -1px -13px 3px #000000;
 }
 
 #password{
-  padding-right: 2.5rem;
+  padding-right: 3rem;
 }
 
 #hide-password{
   width: 25;
   height: 25;
   position: absolute;
-  right: 0;
+  right: .5rem;
   cursor: pointer;
 
 }
@@ -109,4 +113,18 @@ textarea{
 
 .submit:hover{
   background-color: #464444;
+}
+
+@media screen and (min-width: 768px) {
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+  }
+
+  form{
+    height: auto;
+  }
 }
