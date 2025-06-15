@@ -126,5 +126,6 @@ textarea{
 
   form{
     height: auto;
+    border-radius: 30px;
   }
 }

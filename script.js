@@ -37,7 +37,10 @@ hidePassword.addEventListener('click', () => {
     setTimeout(() => {
       inputPassword.type = 'password'
       hidePassword.src = 'images/hide.png'
-    }, 2000);
+    }, 3000);
+  }else if(inputPassword.type === 'text'){
+    hidePassword.src = 'images/hide.png'
+    inputPassword.type = 'password';
   }
 })
 
@@ -177,7 +180,7 @@ const digitRegex = /(?=.*\d)/
     phoneError.style.color = 'seagreen'
     phoneError.style.display = 'block'
   }else{
-    phoneError.innerHTML = 'Phone should be 10 digits'
+    phoneError.innerHTML = 'Phone must be 10 digits'
     phoneError.style.color = 'red'
     phoneError.style.display = 'block'
   }

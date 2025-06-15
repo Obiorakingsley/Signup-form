@@ -11,20 +11,20 @@
 </head>
 <body>
   <div class="form-container">
-    <form id="form" action="submit">
-      <h1>Sign up</h1>
+    <form id="form" method="get" action="https://httpbin.org/get">
+      <h1>Sign Up</h1>
       <div class="input-box">
         <input id="name" type="text" placeholder="Enter full name" autocomplete="on" autofocus>
-        <span id="error-name">Enter full name</span>
+        <span id="error-name"></span>
       </div>
       <div class="input-box">
         <input id="email" type="email" placeholder="Email" autocomplete="on">
-        <span id="error-email">Invalid Email</span>
+        <span id="error-email"></span>
       </div>
       <div class="password">
         <div class="input-box">
           <input id="password" type="password" placeholder="password" autocomplete="on">
-          <span id="error-password">Password must be above 5 characters</span>
+          <span id="error-password"></span>
           <img id="hide-password" src="images/hide.png" alt="hide password icon" width="25" height="25">
           </div>
         <div class="validate-password">
@@ -37,9 +37,9 @@
       </div>
       <div class="input-box">
         <input id="phone" type="tel" placeholder="Phone" autocomplete="on">
-        <span id="error-phone">Invalid Phone Number</span>
+        <span id="error-phone"></span>
       </div>
-      <button class="submit" type="submit">Submit</button>
+      <button class="submit" type="submit">Sign Up</button>
     </form>
   </div>
 </body>
