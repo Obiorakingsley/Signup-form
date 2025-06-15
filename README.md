@@ -2,6 +2,8 @@
 
 A client side form validation with robust password requirements, built with HTML, CSS, and JavaScript.
 
+## 🪄[View Live Demo](https://signup-form-obiora-kingsleys-app.vercel.app/)
+
 ![Form Demo](images/screenshot.png)
 
 ## ✨ Features
@@ -23,7 +25,7 @@ A client side form validation with robust password requirements, built with HTML
 ### CSS3
 ### JavaScript
  - Regular Expression
-### [Deployment]() [vercel]
+### [Deployment](https://signup-form-obiora-kingsleys-app.vercel.app/) [vercel]
 
 
 ## 🚀 Quick Start
